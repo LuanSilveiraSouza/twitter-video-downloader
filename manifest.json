@@ -4,6 +4,9 @@
 	"version": "1.0",
 	"description": "Twitter Video Downloader",
 	"author": "Luan da Silveira de Souza",
+	"browser_action": {
+		"default_popup": "popup.html"
+	},
 	"content_scripts": [
 		{
 			"matches": ["https://twitter.com/*"],
