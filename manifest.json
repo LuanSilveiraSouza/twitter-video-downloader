@@ -1,0 +1,24 @@
+{
+	"manifest_version": 2,
+	"name": "Twitter Video Downloader",
+	"version": "1.0",
+	"description": "Twitter Video Downloader",
+	"author": "Luan da Silveira de Souza",
+	"content_scripts": [
+		{
+			"matches": ["https://twitter.com/*"],
+			"js": ["script.js"]
+		}
+	],
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": true
+	},
+	"permissions": [
+		"webRequest",
+		"webRequestBlocking",
+		"tabs",
+		"background",
+		"<all_urls>"
+	]
+}
